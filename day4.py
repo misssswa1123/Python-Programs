@@ -60,7 +60,19 @@ print("Insert=",newlist)
 newlist.reverse()
 print('Reverse=',newlist)
 
-list.extend(newlist)
-print("Extend list==",list)
+# list.extend(newlist)
+# print("Extend list==",list)
 
+new1=list+newlist
+print(new1)
 
+#remove element
+newlist.remove(89)
+print('Remove:',newlist)
+
+#pop
+print('Pop',newlist.pop())
+print('pop index:',newlist.pop(1))#remove and return element from index 1
+
+newlist.clear()
+print(newlist)
